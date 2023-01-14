@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+}
+
+
+:root {
+  --color-orange: hsl(35, 77%, 62%);
+  --color-red: hsl(5, 85%, 63%);
+  --color-white: hsl(36, 100%, 99%);
+  --color-light-gray: hsl(233, 8%, 79%);
+  --color-dark-gray: hsl(236, 13%, 42%);
+  --color-dark-blue: hsl(240, 100%, 5%);
+}
+
+.text-orange { color: var(--color-orange); }
+.text-red { color: var(--color-orange); }
+.text-light-gray { color: var(--color-light-gray); }
+.text-dark-gray { color: var(--color-dark-gray); }
+.text-dark-blue { color: var(--color-dark-blue); }
+
+.bg-white { background-color: var(--color-white); }
