@@ -15,10 +15,10 @@
   </style>
 </head>
 <body>
-  <header>
+  <header class="flex">
+    <img src="./assets/images/logo.svg" alt="logo">
     <nav>
-      <img src="./assets/images/logo.svg" alt="logo">
-      <ul>
+      <ul class="">
         <li>Home</li>
         <li>New</li>
         <li>Popular</li>
@@ -26,11 +26,12 @@
         <li>Categories</li>
       </ul>
     </nav>
+    <button class="nav-btn" type="button"></button>
   </header>
   <section>
     <img src="./assets/images/image-web-3-mobile.jpg" alt="">
     <h1 class="text-dark-blue">The Bright Future of Web 3.0?</h1>
-    <p class="text-dark-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    <p class="text-dark-blue line-height-2">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
     But is it really fulfilling its promise?</p>
     <a class="btn text-white bg-red" href="#">Read more</a>
   </section>
@@ -64,27 +65,42 @@
     </div>
   </aside>
   <section>
-    <h3>
-      <span>01</span>
-      Reviving Retro PCs
-    </h3>
-    <p>
-      What happens when old PCs are given modern upgrades?
-    </p>
-    <h3>
-      <span>02</span>
-      Top 10 Laptops of 2022
-    </h3>
-    <p>
-      Our best picks for various needs and budgets.
-    </p>
-    <h3>
-      <span>03</span>
-      The Growth of Gaming
-    </h3>
-    <p>
-      How the pandemic has sparked fresh opportunities.
-    </p>
+    <div class="flex img-article-container">
+      <img class="article-img" src="./assets/images/image-retro-pcs.jpg" alt="Retro computer">
+      <div class="article-text-container">
+        <span class="article-number">01</span>
+        <h3>
+          Reviving Retro PCs
+        </h3>
+        <p>
+          What happens when old PCs are given modern upgrades?
+        </p>
+      </div>
+    </div>
+    <div class="flex img-article-container">
+      <img class="article-img" src="./assets/images/image-top-laptops.jpg" alt="Keyboard">
+      <div class="article-text-container">
+        <span class="article-number">02</span>
+        <h3>
+          Top 10 Laptops of 2022
+        </h3>
+        <p>
+          Our best picks for various needs and budgets.
+        </p>
+      </div>
+    </div>
+    <div class="flex img-article-container">
+      <img class="article-img" src="./assets/images/image-gaming-growth.jpg" alt="Controller floating above hand">
+      <div class="article-text-container">
+        <span class="article-number">03</span>
+        <h3>
+          The Growth of Gaming
+        </h3>
+        <p>
+          How the pandemic has sparked fresh opportunities.
+        </p>
+      </div>
+    </div>
   </section>
 
 
