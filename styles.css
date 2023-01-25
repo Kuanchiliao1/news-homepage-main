@@ -26,7 +26,7 @@ img {
   --color-orange: hsl(35, 77%, 62%);
   --color-red: hsl(5, 85%, 63%);
   --color-white: hsl(36, 100%, 99%);
-  --color-light-gray: hsl(233, 8%, 79%);
+  --color-light-gray: hsla(233, 8%, 79%, 50%);
   --color-dark-gray: hsl(236, 13%, 42%);
   --color-dark-blue: hsl(240, 100%, 5%);
 }
@@ -50,17 +50,45 @@ img {
 .inline-block { display: inline-block; }
 
 nav > ul {
-  visibility: hidden;
+  display: none;
 }
 
 .new-articles {
   padding: 1rem;
 }
 
-.new-article-container:not(".new-articles:first-child") {
-  border: 1px solid var(--color-light-gray);
+.new-article-container:not(first-child):not(:last-child) {
+  border-bottom: 1px solid var(--color-light-gray);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
+header {
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+aside {
+  margin-bottom: 3.5rem;
+}
+
+.article-img {
+  display: block;
+  max-width: 100%;
+  width: 25%;
+  object-fit: cover;
+}
+
+.img-article-container {
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.article-text-container {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
 
 
 /* Typography */
@@ -76,7 +104,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3.5rem;
   text-decoration: none;
 }
 
@@ -84,4 +112,37 @@ h2 {
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.line-height-2 {
+  line-height: 2;
+}
+
+/* select first two children */
+
+.new-article-container:nth-child(-n+3) p {
+  margin-bottom: 0;
+}
+
+.article-number {
+  display: block;
+  font-size: 2rem;
+  color: var(color-dark-gray);
+  font-weight: 700;
+}
+
+.article-text-container p,
+.article-text-container h3 {
+  margin: 0;
+}
+
+/* Components */
+.nav-btn {
+  background-image: url(./assets/images/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  border: none;
+  width: 2.5rem;
 }
