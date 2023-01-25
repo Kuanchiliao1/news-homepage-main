@@ -11,7 +11,14 @@ html {
 }
 
 body {
-  margin: 0;
+  font-family: 'Inter', sans-serif;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 
@@ -29,5 +36,52 @@ body {
 .text-light-gray { color: var(--color-light-gray); }
 .text-dark-gray { color: var(--color-dark-gray); }
 .text-dark-blue { color: var(--color-dark-blue); }
+.text-white { color: var(--color-white); }
 
 .bg-white { background-color: var(--color-white); }
+.bg-orange { background-color: var(--color-orange); }
+.bg-red { background-color: var(--color-red); }
+.bg-dark-blue { background-color: var(--color-dark-blue); }
+
+
+/* Layout */
+
+.flex { display: flex; }
+.inline-block { display: inline-block; }
+
+nav > ul {
+  visibility: hidden;
+}
+
+.new-articles {
+  padding: 1rem;
+}
+
+.new-article-container:not(".new-articles:first-child") {
+  border: 1px solid var(--color-light-gray);
+}
+
+
+
+/* Typography */
+h1 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
